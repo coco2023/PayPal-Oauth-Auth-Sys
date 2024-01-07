@@ -22,7 +22,7 @@ spring:
           paypal:
             clientId: AYQwg1YezCe92zHxmpD8Y8q6M3_AbaGYpjs--ATI3WZzYBdcupomPY3L5lO91mdnv48iYjD6FQ41_QwE
             clientSecret: ECbVzUVjhR2Pu_x5PYeXGvmcBnQWK-9sJe1T5D-TlfwJwuXplM666HmJH9A8pvvjkU0UgvftWkSzw23b
-            redirectUri: "https://73d3-66-253-183-231.ngrok-free.app/login/oauth2/code/paypal"
+            redirectUri: "https://880d-66-253-183-231.ngrok-free.app/login/oauth2/code/paypal"
             authorizationGrantType: authorization_code
 #            scope: openid, email, profile
         provider:
@@ -34,3 +34,9 @@ spring:
 
 server:
   port: 9002
+
+security:
+  jwt:
+    token:
+      secret-key: MUUqkTMQiACw7o84UUjKy8mYT4DtYgjNfvqu/VbyxZw=
+      expire-length: 3600000 # 1 hour

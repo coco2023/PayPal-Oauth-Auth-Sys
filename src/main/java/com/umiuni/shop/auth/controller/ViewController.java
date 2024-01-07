@@ -10,4 +10,10 @@ public class ViewController {
     public String loginPage() {
         return "login"; // Refers to 'login.html' in 'src/main/resources/templates'
     }
+
+    @GetMapping("/success")
+    public String successPage() {
+        return "success"; // Refers to 'login.html' in 'src/main/resources/templates'
+    }
+
 }
